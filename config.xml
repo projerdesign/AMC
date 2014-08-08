@@ -25,16 +25,16 @@
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
 	<gap:platform name="android" />
 	
-<icon src="icons/android/xhdpi.png" />
-<icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
-<icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
-<icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
-<icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+<icon src="icon/android/icon-96-xhdpi.png" />
+<icon src="icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
+<icon src="icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
+<icon src="icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi" />
+<icon src="icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
 
-<gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
-<gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
-<gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
-<gap:splash src="splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" /> 	
+<gap:splash src="splash/android/screen-ldpi-landscape.png" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="splash/android/screen-mdpi-landscape.png" gap:platform="android" gap:density="mdpi" />
+<gap:splash src="splash/android/screen-hdpi-landscape.png" gap:platform="android" gap:density="hdpi" />
+<gap:splash src="splash/android/screen-xhdpi-landscape.png" gap:platform="android" gap:density="xhdpi" /> 	
 
 	<preference name="android-installLocation" value="auto" />
 </widget>

@@ -8,10 +8,9 @@
     <!-- versionCode is optional and Android only -->
 	<preference name="phonegap-version" value="3.0.0" />
 	<preference name="android-minSdkVersion" value="10" />
-	<preference name="splash-screen-duration" value="10000"/>
+	<preference name="splash-screen-duration" value="1000"/>
 	<preference name="exit-on-suspend" value="true" />
 	<preference name="show-splash-screen-spinner" value="true" />
-	<preference name="splash-screen-duration" value="10000" />	
 	<preference name="permissions" value="none"/>
     <name>Concertus</name>
 

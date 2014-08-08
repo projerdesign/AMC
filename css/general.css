@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,500,700);
+*{font-family: 'Roboto', sans-serif; background-repeat:no-repeat; background-size: cover;}
+img{display:block}
+#wrapper{height:100%; width:100%; position:absolute}
+.box{height:48%; width:99% ;margin:0.5%; overflow:hidden; position:relative}
+#logo{background-color:#333;}
+#conciertos{background-color:#22A7F0;}
+#about{background-color:#26A65B;}
+#conciertos, #about{width:49%; float:left; background-position:center 10%; background-size:30%; }
+#conciertos{background-image:url(img/calendar_.png);}
+#about{background-image:url(img/about.png);}
+.box p{font-size:5.2em; position:absolute; bottom:-23px; color:#FFF;}
+#conciertos:hover{background-color:#57baf0;}
+#about:hover{background-color:#2cc26a;}
+/*SHAREBTN*/
+button{border:none; background-color:#16a085; background-image:url(img/share.png); background-position:center center; background-size:30px; float:right; width:50px; height:50px}
+/*SHAREBTN*/
+/*NEWS*/
+#news {background-color:#bfbfbf; padding: 50px 0 0 0; height: auto;}
+#news ul{list-style:none; padding:0; margin:0 auto; width:98%}
+#news ul li{background-color:#FFF; margin:10px 1%; border-radius:2px; width:23%; float:left;}
+.imgcontet{ height:250px; overflow:hidden; position:relative;}
+#news ul li img{ display:block; width:100%; height:auto; position:absolute;}
+#news ul li h1{font-size: 0.8em; padding:10px; margin:0; position:absolute; bottom:0; color:#FFF; background-color:rgba(0,0,0,0.5); width:95%; width:calc(100% - 20px); line-height:1.2em}
+
+/*NOTICIA ABIERTA*/
+#noticia {background-color:#fff; padding: 50px 0 0 0; height: auto;}
+.cont-noticia{ width:98%; margin:5px auto 15px auto;}
+.cont-noticia h3{margin:0; padding:10px; font-size:.8em; text-align:right; color: #9E9E9E;}
+.cont-noticia h1{margin:0; padding:0 10px; font-size:1.5em; text-align:left; line-height: 1.2em;}
+.cont-noticia h4{margin:0; padding:0 10px; font-size:.8em; text-align:left; color: #9E9E9E;}
+.cont-noticia img{padding:0 10px; width:95%; width:calc(100% - 20px); margin:20px auto 0 auto; float: left; max-width: 200px;}
+.cont-noticia p{ font-size:1em; margin:5px 0 0 0; padding:10px; width:95%; width:calc(100% - 20px);}
+/*NOTICIA ABIERTA*/
+
+/*NEWS*/
+
+/*CALENDAR*/
+#listcalendar{background-color:#bfbfbf; padding: 50px 0 0 0; height:initial;}
+#topbarmenu{z-index: 10;height:50px; width:100%; position:fixed; top:0; background-color:#3fc380}
+#btn-menu{height:50px; width:50px; background-color:#16a085; position:absolute; left:0; float:left; background-image:url(img/flecha_back.png); background-position:14px center; -webkit-transition: all 0.2s ease-in-out;  -moz-transition: all 0.2s ease-in-out;  -o-transition: all 0.2s ease-in-out;  transition: all 0.2s ease-in-out; background-size:17px}
+
+.boxpresentacion{height:110px; width:95%; margin: 15px auto; position:relative; border-radius: 2px 0 0 2px; background-color:#fff; text-align:center}
+
+.nameevento{ margin: 1em 0 15px 0; font-size:1em; text-align:left; float:left; width:52%; width:calc(100% - 180px); padding: 0 10px; white-space:nowrap; text-overflow: ellipsis; overflow:hidden; }
+.localevento{text-align:left; float:left; width:52%; width:calc(100% - 180px); padding: 0 10px; white-space:nowrap; text-overflow: ellipsis; overflow:hidden; margin:1px 0;}
+
+.fecha{float:left; height:110px; width:110px; border-radius: 2px 0 0 2px; background-color:#3ebfb7; color:#FFF;}
+.fecha h1{margin: 0.17em 0 -15px 0; font-size:3em}
+.fecha h2{font-weight: 100; font-size: 1.8em;}
+
+
+
+.btn-flecha{ width:40px; height:110px; float:right; border-radius: 0 2px 2px 0; background-color:#ecf0f1; background-image:url(img/flecha.png); background-position: center center; position: absolute;
+top: 0px; right: 0px; background-size: initial;}
+.btn-flecha:hover{background-color:#E0E0E0; -webkit-animation: aniFlecha .8s;}
+@-webkit-keyframes aniFlecha {
+  0%  { background-position: center center; }
+  50%  { background-position: 200% center; }
+  51% { background-position: -200% center;}
+  100%{ background-position: center center; }
+ 
+}
+/*CALENDAR*/
+
+/*EVENTO*/
+#event {background-color: #bfbfbf;padding: 50px 0 0 0; height: auto;}
+#banner{ height:200px; position:relative; background-position:center center}
+#banner .boxpresentacion{width:100%; position:absolute; bottom:0; margin:inherit;}
+#banner .fecha{background-color: rgba(62, 191, 183, 0.8);}
+#banner .boxpresentacion{background-color: rgba(255, 255, 255, 0.5)}
+.btn_boletera{ height:60px; position:relative; background-color:#FFF; margin: 15px auto; width: 98%; border-radius:2px}
+.btn_boletera p{ width:120px; height:50px; border-radius:2px 0 0 2px; background-color:#26a65b; padding:5px 0 5px 0; color:#FFF; font-weight:100; text-align:center; font-size: 1.5em;  line-height:1em; float:left;}
+.btn_boletera h1{font-size: 1.3em; margin: 0.67em 0 0 12px; float:left; white-space:nowrap; text-overflow: ellipsis; overflow:hidden; }
+.btn_boletera .btn-flecha{ height:60px; width:26px; background-size:15px;}
+.info{ width:90%; width:calc(98% - 30px);  height:auto; margin:10px auto 20px auto; background-color:#FFF; padding:15px; }
+/*EVENTO*/
+
+/****TABLET****/
+@media (max-width: 1024px) {
+	#news ul li{width:31%;}
+	#news ul li img {top:inherit; height: 100%; width:inherit;}
+}
+/****TABLET****/
+
+/*MOBILE*/
+@media (max-width: 600px) {
+/*NEWS*/
+.imgcontet{ height:150px;}
+#news ul li img{ display:block; width:100%; height:inherit; position:absolute; top: inherit}
+#news ul li{ width:48%; float:left; margin:5px 1%;}
+
+/*NOTICIA ABIERTA*/
+#noticia {background-color:#fff; padding: 50px 0 0 0; height: auto;}
+.cont-noticia{ width:98%; margin:5px auto 15px auto;}
+.cont-noticia h3{margin:0; padding:10px; font-size:.8em; text-align:right; color: #9E9E9E;}
+.cont-noticia h1{margin:0; padding:0 10px; font-size:1.5em; text-align:left; line-height: 1.2em;}
+.cont-noticia h4{margin:0; padding:0 10px; font-size:.8em; text-align:left; color: #9E9E9E;}
+.cont-noticia img{max-width: inherit; padding:0 10px; width:95%; width:calc(100% - 20px); margin:20px auto 0 auto; float: inherit;}
+.cont-noticia p{ font-size:1em; margin:5px 0 0 0; padding:10px; width:95%; width:calc(100% - 20px);}
+/*NOTICIA ABIERTA*/
+
+/*NEWS*/
+/**/
+#conciertos, #about{background-size:80%; background-position:center 20%;}
+.box p{font-size:1.5em; bottom:-8px}
+.boxpresentacion, .fecha, .btn-flecha {height: 90px}
+.fecha h1 {margin: 0.01em 0 -15px 0;}
+.nameevento {margin: 1em 0 5px 0;}
+/*EVENTO*/
+#banner .nameevento{width: 52%; width: calc(100% - 130px);}
+/*EVENTO*/
+}

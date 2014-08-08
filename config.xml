@@ -8,7 +8,7 @@
     <!-- versionCode is optional and Android only -->
 	<preference name="phonegap-version" value="3.0.0" />
 	<preference name="android-minSdkVersion" value="10" />
-	<preference name="splash-screen-duration" value="1000"/>
+	<preference name="splash-screen-duration" value="1500"/>
 	<preference name="exit-on-suspend" value="true" />
 	<preference name="show-splash-screen-spinner" value="true" />
 	<preference name="permissions" value="none"/>
@@ -23,6 +23,14 @@
     </author>
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
 	<gap:platform name="android" />
+	
+	<!-- for Android -->
+	<gap:plugin name="nl.x-services.plugins.calendar" />
+	<feature name="Calendar">
+	  <param name="android-package" value="nl.xservices.plugins.Calendar" />
+	</feature>
+	<uses-permission android:name="android.permission.READ_CALENDAR"/>
+	<uses-permission android:name="android.permission.WRITE_CALENDAR"/>
 	
 <icon src="icon/android/icon-96-xhdpi.png" />
 <icon src="icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />

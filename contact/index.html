@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>CONTACTO</title>
+<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+<link rel="stylesheet" type="text/css" href="../css/general.css">
+<link rel="stylesheet" type="text/css" href="../css/hover-min.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../js/slidx.js"></script>
+</head>
+
+<body id="listcalendar" class="animated bounceInDown">
+    <aside class="slidx-menu">
+       <li class="listmenu" id="mlogo"><a href="#"></a></li>
+       <li class="listmenu"><a href="../index.html">HOME</a></li>
+       <li class="listmenu"><a href="../calendar/index.html">CALENDARIO</a></li>
+       <li class="listmenu"><a href="../about/index.html">NOSOTROS</a></li>
+       <li class="listmenu"><a href="../contact/index.html">CONTACTO</a></li>
+    </aside>
+	<div id="topbarmenu" >
+		<a href="#" id="slidx-button"><div id="btn-menu" class="lmenu"></div></a>
+		<h1>CONTACTO</h1>
+	</div>
+    <div id="wrapper"> 
+		<form method="post" action="" id="contactform" class="contact_form" >
+			<ul>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input name="name" type="text" required id="name">
+                </li>
+                <li>
+            		<label for="tel">Tel:</label>
+                	<input name="tel" id="tel" type="tel">
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input name="mail" type="email" required id="mail">
+                </li>
+                <li>
+                    <label for="fecha">Fecha del evento:</label>
+                    <input name="fecha" id="fecha" type="date">
+                </li>
+                <li>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mesnaje" id="mensaje" required></textarea>
+                </li>
+                <li>
+					<button class="submit" type="submit">ENVIAR</button>
+				</li>
+		</ul>
+		</form>
+	</div>
+</body>
+</html>

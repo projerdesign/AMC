@@ -1,7 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,500,700);
 *{font-family: 'Roboto', sans-serif; background-repeat:no-repeat; background-size: cover;}
+* a{color:inherit; text-decoration:none}
 img{display:block}
-#wrapper{height:100%; width:100%; position:absolute}
+#wrapper{height:100%; width:100%;}
 .box{height:48%; width:99% ;margin:0.5%; overflow:hidden; position:relative}
 #logo{background-color:#333;}
 #conciertos{background-color:#22A7F0;}
@@ -15,13 +16,26 @@ img{display:block}
 /*SHAREBTN*/
 button{border:none; background-color:#16a085; background-image:url(img/share.png); background-position:center center; background-size:30px; float:right; width:50px; height:50px}
 /*SHAREBTN*/
+
+/*MENU*/
+ .slidx-menu {background-color: #333; color:#FFF}
+
+.slidx-menu li {padding: 20px 0px 20px 15px; list-style: none; border-bottom:thin solid #252525}
+#mlogo{background-image:url(img/logo_prev_B.png); height:100px; background-size:contain; background-position:center center;}
+#mlogo:hover{background-color:inherit}
+.slidx-menu li:hover {background-color: #444; cursor: pointer; padding:20px 0 20px 20px}
+
+/*MENU*/
+
 /*NEWS*/
-#news {background-color:#bfbfbf; padding: 50px 0 0 0; height: auto;}
-#news ul{list-style:none; padding:0; margin:0 auto; width:98%}
-#news ul li{background-color:#FFF; margin:10px 1%; border-radius:2px; width:23%; float:left;}
+#news {background-color:#bfbfbf; padding: 0;}
+#news #boxnews{list-style:none; padding:50px 0 0 0; margin:0 auto; width:98%; height:auto; overflow:hidden;}
+#news #boxnews li{background-color:#FFF; margin:10px 1%; border-radius:2px; width:23%; float:left; position:relative;}
+.newimportant{ width:48%!important;}
+.newimportant h1{background-color: rgba(16, 182, 122, 0.5)!important;}
 .imgcontet{ height:250px; overflow:hidden; position:relative;}
-#news ul li img{ display:block; width:100%; height:auto; position:absolute;}
-#news ul li h1{font-size: 0.8em; padding:10px; margin:0; position:absolute; bottom:0; color:#FFF; background-color:rgba(0,0,0,0.5); width:95%; width:calc(100% - 20px); line-height:1.2em}
+#news #boxnews li img{ display:block; width:100%; height:auto; position:absolute;}
+#news #boxnews li h1{font-size: 0.8em; padding:10px; margin:0; position:absolute; bottom:0; color:#FFF; background-color:rgba(0,0,0,0.5); width:95%; width:calc(100% - 20px); line-height:1.2em}
 
 /*NOTICIA ABIERTA*/
 #noticia {background-color:#fff; padding: 50px 0 0 0; height: auto;}
@@ -36,9 +50,14 @@ button{border:none; background-color:#16a085; background-image:url(img/share.png
 /*NEWS*/
 
 /*CALENDAR*/
-#listcalendar{background-color:#bfbfbf; padding: 50px 0 0 0; height:initial;}
-#topbarmenu{z-index: 10;height:50px; width:100%; position:fixed; top:0; background-color:#3fc380}
+#listcalendar{background-color:#bfbfbf; padding:0;}
+#wrapper{padding:50px 0 0 0; margin:0 auto; width:98%; height:auto; overflow:hidden;}
+#topbarmenu{z-index: 2;height:50px; width:100%; position:fixed; top:0; background-color:#3fc380}
+#topbarmenu h1{ margin:0; padding:0; text-align:center; color:#FFF}
 #btn-menu{height:50px; width:50px; background-color:#16a085; position:absolute; left:0; float:left; background-image:url(img/flecha_back.png); background-position:14px center; -webkit-transition: all 0.2s ease-in-out;  -moz-transition: all 0.2s ease-in-out;  -o-transition: all 0.2s ease-in-out;  transition: all 0.2s ease-in-out; background-size:17px}
+
+.lmenu{background-image:url(img/menu_ico.png)!important; background-size:45px!important;background-position: -20px 4px!important;}
+.lmenu:hover{background-position: 0px 4px!important;}
 
 .boxpresentacion{height:110px; width:95%; margin: 15px auto; position:relative; border-radius: 2px 0 0 2px; background-color:#fff; text-align:center}
 
@@ -53,7 +72,7 @@ button{border:none; background-color:#16a085; background-image:url(img/share.png
 
 .btn-flecha{ width:40px; height:110px; float:right; border-radius: 0 2px 2px 0; background-color:#ecf0f1; background-image:url(img/flecha.png); background-position: center center; position: absolute;
 top: 0px; right: 0px; background-size: initial;}
-.btn-flecha:hover{background-color:#E0E0E0; -webkit-animation: aniFlecha .8s;}
+.boxpresentacion:hover .btn-flecha{background-color:#E0E0E0; -webkit-animation: aniFlecha .8s;}
 @-webkit-keyframes aniFlecha {
   0%  { background-position: center center; }
   50%  { background-position: 200% center; }
@@ -76,10 +95,41 @@ top: 0px; right: 0px; background-size: initial;}
 .info{ width:90%; width:calc(98% - 30px);  height:auto; margin:10px auto 20px auto; background-color:#FFF; padding:15px; }
 /*EVENTO*/
 
+/*CONTACTO*/
+#contactform{margin:0 auto; max-width:800px}
+.contact_form ul {width:100%; list-style-type:none; margin:0px; padding:0px;}
+.contact_form li{padding: 12px; background-color: #F8F8F8; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; overflow:hidden} 
+.contact_form li h1, #titulo{text-align:center; background-color:#ff6b00; color:#FFF; margin:0 auto}
+.contact_form #line{padding:0;}
+.contact_form label { color: #646464; display: inline-block;float: left; font-size: 13px; font-weight: bold; margin-top: 3px; padding: 3px 10px 3px 3px; width: 100%; text-align:center;}
+.contact_form select{height:40px; width:340px; padding:5px 8px; padding-right:5px!important;}
+.contact_form input {height:20px; width:100%; width:calc(100% - 40px); padding:5px 8px;}
+.contact_form textarea {padding:8px; width:100%; width:calc(100% - 40px);}
+.contact_form button {margin-left:90px;}
+
+/*----- estilos visuales de los elementos --------*/
+
+.contact_form input, .contact_form textarea, .contact_form select { border:0px solid #aaa; border-radius:0px; color:#A2A2A2; font-size: 12px; padding-right:30px; resize:none; 	background-color:#DFDFDF; text-transform: uppercase; letter-spacing:1px; font-style:normal; text-transform:initial; }
+.contact_form input:focus, .contact_form textarea:focus, .contact_form select:focus{background: #8A8A8A; color: #ffffff; box-shadow: 3px 3px 0px #2ED85E;}
+
+/* === Estilos de Validacion === */	
+
+.contact_form input:required:valid, .contact_form textarea:required:valid {border-color: #ff6b00;}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {box-shadow: 3px 3px 0px #2ED85E;}
+input:-webkit-autofill {color:#a5a5a5!important;}
+/* === Estilos del boton de Envio === */
+button.submit {padding: 9px 17px;font-weight: bold;line-height: 1;color: #FFF;border: none;background-color: #2AC26D;width: 100%;border-radius: 0px;margin: 0 auto;display: block; background-image:inherit;}
+button.submit:hover {opacity:.8;cursor: pointer; }
+button.submit:active {border: 1px solid #222;}
+#contact{height:700px; width:500px; margin:0 auto;}
+/*CONTACTO*/
+
 /****TABLET****/
 @media (max-width: 1024px) {
-	#news ul li{width:31%;}
-	#news ul li img {top:inherit; height: 100%; width:inherit;}
+	#news #boxnews li{width:31%;}
+	#news #boxnews li img {top:inherit; height: 100%; width:inherit;}
+	.newimportant{ width:98%!important; width:calc(98% - 6px)!important;}
+	.newimportant img{width: 100%!important; height:inherit!important;}
 }
 /****TABLET****/
 
@@ -87,8 +137,10 @@ top: 0px; right: 0px; background-size: initial;}
 @media (max-width: 600px) {
 /*NEWS*/
 .imgcontet{ height:150px;}
-#news ul li img{ display:block; width:100%; height:inherit; position:absolute; top: inherit}
-#news ul li{ width:48%; float:left; margin:5px 1%;}
+#news #boxnews li img{ display:block; width:100%; height:inherit; position:absolute; top: inherit}
+#news #boxnews li{ width:48%; float:left; margin:5px 1%;}
+	.newimportant{ width:99%!important; width:calc(99% - 6px)!important;}
+	.newimportant img{width: 100%!important; height:inherit!important;}
 
 /*NOTICIA ABIERTA*/
 #noticia {background-color:#fff; padding: 50px 0 0 0; height: auto;}

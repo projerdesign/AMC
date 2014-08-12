@@ -1,27 +1,61 @@
+
 <!doctype html>
 <html>
 <head>
 <meta charset="iso-8859-1">
 <meta name="viewport" content="width=device-width, user-scalable=no">
-<title>Calendario de actividades</title>
+<title>Bienvenido</title>
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/general.css">
 <link rel="stylesheet" type="text/css" href="css/hover-min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
+<script src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/slidx.js"></script>
 </head>
-
-<body class="animated bounceInDown">
-    <div id="wrapper">
-    	<div class="box" id="logo">
-        </div>
-        <a href="calendar/index.html"><div id="conciertos" class="box shrink">
-        	<p>CALENDARIO
-            </p>
-        </div></a>
-        <a href="news/index.html"><div id="about" class="box shrink">
-	        <p>NOTICIAS
-            </p>
-        </div></a>
+<body id="news">
+    <aside class="slidx-menu">
+       <li class="listmenu" id="mlogo"><a href="#"></a></li>
+       <li class="listmenu"><a href="#">HOME</a></li>
+       <li class="listmenu"><a href="calendar/index.html">CALENDARIO</a></li>
+       <li class="listmenu"><a href="about/index.html">NOSOTROS</a></li>
+       <li class="listmenu"><a href="contact/index.html">CONTACTO</a></li>
+    </aside>
+    <div id="topbarmenu">
+        <a href="#" id="slidx-button"><div id="btn-menu" class="lmenu"></div></a>
+        <h1>CONCERTUS</h1>
     </div>
+    <ul id="boxnews">
+		<a href="news/noticia.html"><li class="newimportant shrink">
+        	<div class="imgcontet">
+        		<img src="img/ccu.jpg" alt=""/>
+                 <h1>Escuchar música favorece tu rendimiento</h1>
+            </div>
+        </li></a>
+        
+    	<a href="news/noticia.html"><li class="shrink">
+        	<div class="imgcontet">
+        		<img src="img/ccu.jpg" alt=""/>
+                 <h1>Escuchar música favorece tu rendimiento</h1>
+            </div>
+        </li></a>
+        <li class="shrink">
+        	<div class="imgcontet">
+        		<img src="img/ccu.jpg" alt=""/>
+                 <h1>Escuchar música favorece tu rendimiento</h1>
+            </div>
+        </li>
+        <li class="shrink">
+        	<div class="imgcontet">
+        		<img src="img/ccu.jpg" alt=""/>
+                 <h1>Escuchar música favorece tu rendimiento</h1>
+            </div>
+        </li>
+        <li class="shrink">
+        	<div class="imgcontet">
+        		<img src="img/ccu.jpg" alt=""/>
+                 <h1>Escuchar música favorece tu rendimiento</h1>
+          </div>
+        </li>
+    </ul>
 </body>
 </html>

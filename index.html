@@ -16,7 +16,17 @@
 	document.addEventListener("deviceready", onDeviceReady, false);
 	function onDeviceReady() {
 		document.addEventListener("backbutton", onBackKeyDown, false);
+		document.addEventListener("menubutton", onMenuKeyDown, false);
 		
+	}
+
+	function onMenuKeyDown() {
+		 if (!$(menu).hasClass('slidx-open')) {
+                open();
+            }
+            else {
+                close(normalTime);
+            }
 	}
 	function onBackKeyDown() {
 		var openmenu = $(".slidx-menu").hasClass("slidx-open");
@@ -24,12 +34,8 @@
 			close();
 			close(normalTime);
 			close(menutimeTime);
-			var openmenu = $(".slidx-menu").hasClass("slidx-open");
-			alert(openmenu)
 		}else{
 			var openmenu = $(".slidx-menu").hasClass("slidx-open");
-			alert(openmenu)
-			navigator.app.exitApp();
 		}
 		
 	}

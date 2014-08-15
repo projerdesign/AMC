@@ -22,7 +22,38 @@ function onLoad() {
 		
 	}
 	function onMenuKeyDown() {
-		 
+		var openmenu = $(".slidx-menu").hasClass("slidx-open");
+		if(openmenu == true){
+			$(".slidx-menu").animate({
+                left: '-250',
+            }, 1000 );
+			$("#topbarmenu").animate({
+                left: '-250',
+            }, 1000 );
+			setTimeout(function() {
+         	  $('#slidx-shadow').remove();
+        	}, 1000);
+		}else{
+			$(".slidx-menu").animate({
+                left: '0',
+            }, 1000 );
+			$("#topbarmenu").animate({
+                left: '0',
+            }, 1000 );
+			$("<div>",{
+            id: "slidx-shadow", //atributo directo, igual que si fuéramos con attr(“id”)
+            css: //propiedad de jQuery
+                {
+                "position": "fixed",
+                "top": "0px",
+                "width": "100%",
+                "height": "100%",
+                "background-color": "#000000",
+                "opacity": "0",
+                "z-index": "1",
+                },
+            }).appendTo('body');
+			}
 	}
 	function onBackKeyDown() {
 		var openmenu = $(".slidx-menu").hasClass("slidx-open");
@@ -30,6 +61,12 @@ function onLoad() {
 			$(".slidx-menu").animate({
                 left: '-250',
             }, 1000 );
+			$("#topbarmenu").animate({
+                left: '-250',
+            }, 1000 );
+			setTimeout(function() {
+            $('#slidx-shadow').remove();
+        }, 1000);
 		}else{
 			navigator.app.exitApp();
 		}

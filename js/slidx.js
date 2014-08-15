@@ -206,3 +206,11 @@ function hola()
 {
    alert("hola");
 }
+function onMenuKeyDown() {
+		 if (!$(menu).hasClass('slidx-open')) {
+                hola();
+            }
+            else {
+                hola(normalTime);
+            }
+	}

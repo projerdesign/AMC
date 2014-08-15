@@ -23,10 +23,17 @@ function onLoad() {
 	}
 	function onMenuKeyDown() {
 		 if (!$(menu).hasClass('slidx-open')) {
-                hola();
+               $(menu).animate({
+                left: '-' + size,
+            }, delayTime)
             }
             else {
-                hola();
+				$(menu).animate({
+					left: '0',
+            	}, normalTime );
+                $(barmenu).animate({
+                    left: size,
+                }, normalTime );
             }
 	}
 	function onBackKeyDown() {
@@ -40,11 +47,6 @@ function onLoad() {
 		}
 		
 	}
-$(document).ready(function(){
-	function hola(){
-		alert('hola');
-	}
-});
 </script>
 </head>
 <body onload="onLoad()" id="news">

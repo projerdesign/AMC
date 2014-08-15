@@ -25,21 +25,11 @@ function onLoad() {
 		var openmenu = $(".slidx-menu").hasClass("slidx-open");
 		if(openmenu == true){
 			$(".slidx-menu").animate({
-                left: '-250',
-            }, 1000 );
-			$("#topbarmenu").animate({
-                left: '-250',
-            }, 1000 );
-			setTimeout(function() {
-         	  $('#slidx-shadow').remove();
-        	}, 1000);
-		}else{
-			$(".slidx-menu").animate({
                 left: '0',
-            }, 1000 );
+            }, 500 );
 			$("#topbarmenu").animate({
-                left: '0',
-            }, 1000 );
+                left: '250',
+            }, 500 );
 			$("<div>",{
             id: "slidx-shadow", //atributo directo, igual que si fuéramos con attr(“id”)
             css: //propiedad de jQuery
@@ -53,6 +43,19 @@ function onLoad() {
                 "z-index": "1",
                 },
             }).appendTo('body');
+			
+		}else{
+			setTimeout(function() {
+         	  $('#slidx-shadow').remove();
+        	}, 500);
+			
+			$(".slidx-menu").animate({
+                left: '-250',
+            }, 500 );
+			$("#topbarmenu").animate({
+                left: '0',
+            }, 500 );
+			
 			}
 	}
 	function onBackKeyDown() {

@@ -22,31 +22,20 @@ function onLoad() {
 		
 	}
 	function onMenuKeyDown() {
-		 if (!$(menu).hasClass('slidx-open')) {
-               $(menu).animate({
-                left: '-' + size,
-            }, delayTime)
-            }
-            else {
-				$(menu).animate({
-					left: '0',
-            	}, normalTime );
-                $(barmenu).animate({
-                    left: size,
-                }, normalTime );
-            }
+		 
 	}
 	function onBackKeyDown() {
 		var openmenu = $(".slidx-menu").hasClass("slidx-open");
 		if(openmenu == true){
-			close();
-			close(normalTime);
-			close(menutimeTime);
+			$(".slidx-menu").animate({
+                left: '0',
+            }, 1000 );
 		}else{
 			navigator.app.exitApp();
 		}
 		
 	}
+
 </script>
 </head>
 <body onload="onLoad()" id="news">

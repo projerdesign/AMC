@@ -13,13 +13,22 @@
 <script type="text/javascript" src="js/slidx.js"></script>
 <!--<script src="cordova.js"></script>-->
 <script>
+function onLoad() {
 	document.addEventListener("deviceready", onDeviceReady, false);
+}
 	function onDeviceReady() {
 		document.addEventListener("backbutton", onBackKeyDown, false);
 		document.addEventListener("menubutton", onMenuKeyDown, false);
 		
 	}
-
+	function onMenuKeyDown() {
+		 if (!$(menu).hasClass('slidx-open')) {
+                $.hola();
+            }
+            else {
+                $.hola(normalTime);
+            }
+	}
 	function onBackKeyDown() {
 		var openmenu = $(".slidx-menu").hasClass("slidx-open");
 		if(openmenu == true){
@@ -33,7 +42,7 @@
 	}
 </script>
 </head>
-<body id="news">
+<body onload="onLoad()" id="news">
     <aside class="slidx-menu">
        <li class="listmenu" id="mlogo"><a href="#"></a></li>
        <li class="listmenu"><a href="#">HOME</a></li>

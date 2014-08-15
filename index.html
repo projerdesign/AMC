@@ -63,13 +63,13 @@ function onLoad() {
 		if(openmenu == true){
 			$(".slidx-menu").animate({
                 left: '-250',
-            }, 1000 );
+            }, 500 );
 			$("#topbarmenu").animate({
-                left: '-250',
-            }, 1000 );
+                left: '0',
+            }, 500 );
 			setTimeout(function() {
             $('#slidx-shadow').remove();
-        }, 1000);
+        }, 500);
 		}else{
 			navigator.app.exitApp();
 		}

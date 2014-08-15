@@ -24,7 +24,11 @@
 			close();
 			close(normalTime);
 			close(menutimeTime);
+			var openmenu = $(".slidx-menu").hasClass("slidx-open");
+			alert(openmenu)
 		}else{
+			var openmenu = $(".slidx-menu").hasClass("slidx-open");
+			alert(openmenu)
 			navigator.app.exitApp();
 		}
 		

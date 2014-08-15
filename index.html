@@ -47,7 +47,7 @@ function onLoad() {
 		}else{
 			setTimeout(function() {
          	  $('#slidx-shadow').remove();
-        	}, 500);
+        		}, 500);
 			
 			$(".slidx-menu").animate({
                 left: '-250',
@@ -55,8 +55,9 @@ function onLoad() {
 			$("#topbarmenu").animate({
                 left: '0',
             }, 500 );
+			 $(".slidx-menu").removeClass('slidx-open');
+		}
 			
-			}
 	}
 	function onBackKeyDown() {
 		var openmenu = $(".slidx-menu").hasClass("slidx-open");
@@ -70,6 +71,7 @@ function onLoad() {
 			setTimeout(function() {
             $('#slidx-shadow').remove();
         }, 500);
+			$(".slidx-menu").removeClass('slidx-open');
 		}else{
 			navigator.app.exitApp();
 		}

@@ -22,6 +22,8 @@
 		var openmenu = $(".slidx-menu").hasClass("slidx-open");
 		if(openmenu == true){
 			close();
+			close(normalTime);
+			close(,menutimeTime);
 		}else{
 			navigator.app.exitApp();
 		}

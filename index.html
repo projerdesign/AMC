@@ -13,16 +13,14 @@
 <script type="text/javascript" src="js/slidx.js"></script>
 <!--<script src="cordova.js"></script>-->
 <script>
-function onLoad() {
 	document.addEventListener("deviceready", onDeviceReady, false);
-}
 	function onDeviceReady() {
 		document.addEventListener("backbutton", onBackKeyDown, false);
 		document.addEventListener("menubutton", onMenuKeyDown, false);
 		
 	}
 	function onMenuKeyDown() {
-		alert("run")
+		alert("run");
 	}
 	function onBackKeyDown() {
 		var openmenu = $(".slidx-menu").hasClass("slidx-open");

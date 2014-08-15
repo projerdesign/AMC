@@ -202,7 +202,6 @@ $(document).ready(function(){
         });
     };
 });
-function hola()
-{
+function hola(){
    alert("hola");
 }

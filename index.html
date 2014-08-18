@@ -26,22 +26,22 @@ function onLoad() {
 		if(openmenu == true){
 			setTimeout(function() {
          	  $('#slidx-shadow').remove();
-        		}, 500);
+        		}, 100);
 			$(".slidx-menu").animate({
                 left: '-250',
-            }, 500 );
+            }, 100 );
 			$("#topbarmenu").animate({
                 left: '0',
-            }, 500 );
+            }, 100 );
 			$(".slidx-menu").removeClass('slidx-open');
 		}else{
 			$(".slidx-menu").addClass('slidx-open');
 			$(".slidx-menu").animate({
                 left: '0',
-            }, 500 );
+            }, 200 );
 			$("#topbarmenu").animate({
                 left: '250',
-            }, 500 );
+            }, 200 );
 			$("<div>",{
             id: "slidx-shadow", //atributo directo, igual que si fuéramos con attr(“id”)
             css: //propiedad de jQuery
@@ -63,13 +63,13 @@ function onLoad() {
 		if(openmenu == true){
 			$(".slidx-menu").animate({
                 left: '-250',
-            }, 500 );
+            }, 100 );
 			$("#topbarmenu").animate({
                 left: '0',
-            }, 500 );
+            }, 100 );
 			setTimeout(function() {
-            $('#slidx-shadow').remove();
-        }, 500);
+    	        $('#slidx-shadow').remove();
+	        }, 100);
 			$(".slidx-menu").removeClass('slidx-open');
 		}else{
 			navigator.app.exitApp();

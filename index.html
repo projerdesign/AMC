@@ -24,6 +24,19 @@ function onLoad() {
 	function onMenuKeyDown() {
 		var openmenu = $(".slidx-menu").hasClass("slidx-open");
 		if(openmenu == true){
+			
+			setTimeout(function() {
+         	  $('#slidx-shadow').remove();
+        		}, 500);
+			
+			$(".slidx-menu").animate({
+                left: '-250',
+            }, 500 );
+			$("#topbarmenu").animate({
+                left: '0',
+            }, 500 );
+			 $(".slidx-menu").removeClass('slidx-open');
+		}else{
 			$(".slidx-menu").animate({
                 left: '0',
             }, 500 );
@@ -43,19 +56,6 @@ function onLoad() {
                 "z-index": "1",
                 },
             }).appendTo('body');
-			
-		}else{
-			setTimeout(function() {
-         	  $('#slidx-shadow').remove();
-        		}, 500);
-			
-			$(".slidx-menu").animate({
-                left: '-250',
-            }, 500 );
-			$("#topbarmenu").animate({
-                left: '0',
-            }, 500 );
-			 $(".slidx-menu").removeClass('slidx-open');
 		}
 			
 	}

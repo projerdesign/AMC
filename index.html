@@ -42,10 +42,10 @@ function onLoad() {
 			$("#topbarmenu").animate({
                 left: '250',
             }, 200 );
-			$("<div>",{
-            id: "slidx-shadow", //atributo directo, igual que si fuéramos con attr(“id”)
-            css: //propiedad de jQuery
-                {
+			
+			$("<div><div/>")
+			.attr("id","slidx-shadow")
+            .css({
                 "position": "fixed",
                 "top": "0px",
                 "width": "100%",
@@ -53,8 +53,8 @@ function onLoad() {
                 "background-color": "#000000",
                 "opacity": "0",
                 "z-index": "1",
-                },
-            }).appendTo('body');
+			})
+			.appendTo('body');
 		}
 			
 	}

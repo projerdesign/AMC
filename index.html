@@ -78,6 +78,15 @@ function onLoad() {
 	}
 
 </script>
+<script>
+	$.ajax({
+		type:"GET",
+		url:"http://storybox.mx/concertus/grillpanel.php",
+		success: function(data){
+			$('#boxnews').html(data);
+			}
+	});
+</script>
 </head>
 <body onload="onLoad()" id="news">
     <aside class="slidx-menu">

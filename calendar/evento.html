@@ -13,6 +13,9 @@
 <style>
 html, body{height: auto;}
 </style>
+<script>
+function openDeviceBrowser (externalLinkToOpen){	window.open(externalLinkToOpen, '_system', 'location=no');}
+</script>
 </head>
 
 <body id="event" class="animated bounceInDown">
@@ -32,7 +35,8 @@ html, body{height: auto;}
                 <p class="localevento"><strong>20:30 hrs</strong></p>
         </div>
     </div>
-    <a href="http://web.superboletos.com:8001/SuperBoletos/index.do" target="_blank"><div class="btn_boletera">
+    <a href="#" onclick="openDeviceBrowser ('http://web.superboletos.com:8001/SuperBoletos/index.do')"><div class="btn_boletera">
+    
     	<p>OBTENER PASES EN:</p>
         <h1>suberboletos.com</h1>
         <div class="btn-flecha">

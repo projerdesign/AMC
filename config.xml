@@ -25,7 +25,10 @@
 	<gap:platform name="android" />
 	
 	<!-- for Android -->
-	
+<access origin="*" browserOnly="true"/>
+<gap:plugin name="org.apache.cordova.inappbrowser" />
+<gap:plugin name="org.apache.cordova.geolocation" />
+
 <icon src="icon/android/icon-96-xhdpi.png" />
 <icon src="icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
 <icon src="icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />

@@ -17,8 +17,8 @@
 				}
 				echo'
 					<div class="imgcontet">
-						<img src="news/img/'.$img.'" alt="img"/>
-						<h1>Escuchar música favorece tu rendimiento</h1>
+						<img src="http://storybox.mx/concertus/news/img/'.$img.'" alt="img"/>
+						<h1>'.$titulo.'</h1>
 					</div>
         		</li></a>
 				';

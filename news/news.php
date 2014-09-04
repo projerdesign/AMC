@@ -18,7 +18,7 @@
 					<h3>',hace($fecha_publiciacion).'<h3>
 					<h1>' .$titulo.'</h1>
 					<h4>Publicado por '.$publicado.'</h4>
-					<img src="img/'.$img.'" alt="img"/>
+					<img src="http://storybox.mx/concertus/news/img/'.$img.'" alt="img"/>
 					<p>'.$noticia.'</p>';
 					
 	

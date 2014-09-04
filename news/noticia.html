@@ -25,12 +25,12 @@ var numbernew = recibiendoVariable;
 	});
 }
 function crearbtn(numbernew){
-		var titutlo =document.getElementsByTagName("h1")[0].innerHTML;
+		var titulo =document.getElementsByTagName("h1")[0].innerHTML;
 		var boton = document.createElement("button");
 		boton.type = "button";
 		boton.className = "push";
 		boton.onclick  = function(){
-			window.plugins.socialsharing.share(''+titutlo+'', null, null, 'http://www.concertus.mx?id='+ numbernew)
+			window.plugins.socialsharing.share(''+titulo+'', null, null, 'http://www.concertus.mx?id='+ numbernew)
 		}
 		document.getElementById('topbarmenu').appendChild(boton);	
 	}
